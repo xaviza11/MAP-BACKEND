@@ -9,7 +9,9 @@ To start the project, use the following command:
 
 ```bash
 go run .
+```
 
 ### Running Tests
 To execute the test suite, run:
+```bash
 go test ./services -v
