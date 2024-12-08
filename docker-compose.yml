@@ -1,0 +1,12 @@
+services:
+  go-sqlite-backend:
+    build:
+      context: ./
+    container_name: sqlite-backend
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./sqlite-backend:/app
+      - ./sqlite-backend/database.db:/app/database.db
+    environment:
+      - DATABASE_PATH=./production.db 
